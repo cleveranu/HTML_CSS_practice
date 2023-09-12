@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>  
+        body {
+            font-family: Calibri, Helvetica, sans-serif;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 180vh;
+            margin: 0;
+            background-color: #f2f2f2; /* Added a background color */
+        }  
+        .container {
+            width: 30%;
+            max-width: 400px; 
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #f1f1f1;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        input[type=text], input[type=password], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #f1f1f1;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2"><h1>Registration Form</h1></th>
+                </tr>
+             
+
+                <tr>
+                    <td>Firstname:</td>
+                    <td><input type="text" name="firstname"
+                            placeholder="Firstname" required></td>
+                </tr>
+                <tr>
+                    <td>Middlename:</td>
+                    <td><input type="text" name="middlename"
+                            placeholder="Middlename" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"
+                            placeholder="Enter Email" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="psw"
+                            placeholder="Enter Password" required></td>
+                </tr>
+                <tr>
+                    <td>Re-type Password:</td>
+                    <td><input type="password" name="psw-repeat"
+                            placeholder="Retype Password" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" value="Male" name="gender" checked>
+                        Male
+                        <input type="radio" value="Female" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>
+                        <input type="text" name="country code"
+                            placeholder="Country Code" value="+91" size="2"
+                            required>
+                        <input type="text" name="phone" placeholder="Phone no."
+                            size="10" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea cols="40" rows="5"
+                            placeholder="Current Address" name="address"
+                            required></textarea></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" name="state" placeholder="State"
+                            required></td>
+                </tr>
+                <tr>
+                    <td>Select Country:</td>
+                    <td>
+                        <select name="country">
+                            <option value="USA">Choose your country</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language Known:</td>
+                    <td>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> English</label>
+                            <input type="checkbox" id="vehicle2">
+                            <label for="vehicle2"> Hindi</label>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3">Kannada</label><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="registerbtn">Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </body>
+</html>
